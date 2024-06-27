@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Cheese Lovers Survey</h1>
+    <p id="description">Please fill out the form below to help us understand your cheese preferences.</p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+        </div>
+        <div class="form-group">
+            <label for="dropdown">What is your favorite type of cheese?</label>
+            <select id="dropdown" name="favorite-cheese">
+                <option value="cheddar">Cheddar</option>
+                <option value="brie">Brie</option>
+                <option value="gouda">Gouda</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="mozzarella">Mozzarella</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>How often do you eat cheese?</p>
+            <label><input type="radio" name="frequency" value="daily" required> Daily</label>
+            <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+            <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+        </div>
+        <div class="form-group">
+            <p>Which cheese dishes do you enjoy?</p>
+            <label><input type="checkbox" name="dish" value="pizza"> Pizza</label>
+            <label><input type="checkbox" name="dish" value="cheeseburger"> Cheeseburger</label>
+            <label><input type="checkbox" name="dish" value="cheese-platter"> Cheese Platter</label>
+            <label><input type="checkbox" name="dish" value="mac-and-cheese"> Mac and Cheese</label>
+        </div>
+        <div class="form-group">
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
